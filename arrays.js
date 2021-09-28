@@ -9,7 +9,7 @@ for (let i = 0; i < size; ) {
     alreadyThere = false;
     const candidate = Math.trunc(Math.random() * (max - min) + min);
 
-    for (let prev of array)
+    for (const prev of array)
         if (prev === candidate) 
             alreadyThere = true;
 
@@ -28,4 +28,9 @@ for (let i = 0; i < size; i++) {
         }
     }
 }
+
+for (const n of array)
+    console.log(n);
+
+console.log('Array is now sorted with bubblesort!');
 
