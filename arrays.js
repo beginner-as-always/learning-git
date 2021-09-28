@@ -1,7 +1,7 @@
 const array = [];
-const size = 20;
-const max = 50;
-const min = 25;
+const size = 10;
+const max = 20;
+const min = 10;
 
 let alreadyThere = false;
 
@@ -27,7 +27,7 @@ for (const n of array)
 console.log(`Sum of the array elements is ${sum}`);
 
 for (let i = 0; i < size; i++) {
-    for (let j = 1; j < i; j++) {
+    for (let j = 1; j < size - i; j++) {
         if (array[j - 1] > array[j]) {
             const temp = array[j - 1];
             array[j - 1] = array[j];
