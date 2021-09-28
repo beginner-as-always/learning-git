@@ -17,3 +17,11 @@ for (let i = 0; i < size; ) {
         console.log(`${i + 1}: ${(array[i++] = candidate)}`);
 }
 
+// Sum of the elements of the array
+let sum = 0;
+
+for (const n of array) 
+    sum += n;
+
+console.log(`Sum of the array elements is ${sum}`);
+
